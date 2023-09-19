@@ -1,0 +1,5 @@
+server:
+  port: 6081
+msa-endpoint-uri:
+  rpc:
+    endpoint: /api/server/proxy

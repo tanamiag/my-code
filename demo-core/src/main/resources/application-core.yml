@@ -1,0 +1,7 @@
+msa:
+  proxy-uri:
+    api-server: http://localhost:6081/api/server/proxy
+  by-pass-header:
+    - referer
+    - user-agent
+    - x-tran-id

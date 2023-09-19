@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'demo'
+include 'demo-core'
+include 'demo-client'
+include 'demo-server'
+//include 'demo-server-endpoint'
+include ':demo-server-endpoint'
+project(':demo-server-endpoint').projectDir = new File(settingsDir, './demo-server/demo-server-endpoint')
